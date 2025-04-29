@@ -17,6 +17,10 @@ namespace FerioBackend.DTOs
         public string EnlaceWeb { get; set; }
         public string Contacto { get; set; }
         public int UsuarioId { get; set; }
+        public int PosX { get; set; }
+        public int PosY { get; set; }
+        public int Width { get; set; } = 2;
+        public int Height { get; set; } = 2;
         public List<int> CategoriaIds { get; set; }
     }
 }

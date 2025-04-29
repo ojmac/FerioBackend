@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="800" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- Inicio -->
+    <mxCell id="2" value="Inicio" style="ellipse;fillColor=#FFD700;" vertex="1" parent="1">
+      <mxGeometry x="250" y="50" width="100" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- Registro/Login -->
+    <mxCell id="3" value="Registro/Login" style="rectangle;fillColor=#FF6347;" vertex="1" parent="1">
+      <mxGeometry x="250" y="120" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="4" edge="1" source="2" target="3" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- MainPage -->
+    <mxCell id="5" value="MainPage (Opciones)" style="rectangle;fillColor=#4682B4;" vertex="1" parent="1">
+      <mxGeometry x="250" y="190" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="6" edge="1" source="3" target="5" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Opciones principales -->
+    <mxCell id="7" value="ChatbotPage" style="rectangle;fillColor=#87CEEB;" vertex="1" parent="1">
+      <mxGeometry x="50" y="260" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="8" value="StandsPage" style="rectangle;fillColor=#87CEEB;" vertex="1" parent="1">
+      <mxGeometry x="200" y="260" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="9" value="MapaPage" style="rectangle;fillColor=#87CEEB;" vertex="1" parent="1">
+      <mxGeometry x="350" y="260" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="10" value="PerfilPage" style="rectangle;fillColor=#87CEEB;" vertex="1" parent="1">
+      <mxGeometry x="500" y="260" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="11" value="MensajesPage" style="rectangle;fillColor=#87CEEB;" vertex="1" parent="1">
+      <mxGeometry x="650" y="260" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="12" value="Deslogarse" style="ellipse;fillColor=#DC143C;" vertex="1" parent="1">
+      <mxGeometry x="250" y="350" width="120" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- Conexiones -->
+    <mxCell edge="1" source="5" target="7" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell edge="1" source="5" target="8" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell edge="1" source="5" target="9" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell edge="1" source="5" target="10" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell edge="1" source="5" target="11" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell edge="1" source="5" target="12" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

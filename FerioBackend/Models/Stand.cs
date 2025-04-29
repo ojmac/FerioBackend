@@ -10,9 +10,14 @@ namespace FerioBackend.Models
         public string Logo { get; set; } 
         public string Ubicacion { get; set; } 
         public string EnlaceWeb { get; set; } 
-        public string Contacto { get; set; } 
+        public string Contacto { get; set; }
 
-        
+        public int PosX { get; set; }  // Coordenada X en el plano
+        public int PosY { get; set; }  // Coordenada Y en el plano
+        public int Width { get; set; } = 2; 
+        public int Height { get; set; } = 2;
+
+
         public int UsuarioId { get; set; }
         public Usuario? Usuario { get; set; }
 

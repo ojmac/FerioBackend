@@ -74,7 +74,11 @@ namespace FerioBackend.Controllers
                 Contacto = stand.Contacto,
                 UsuarioId = stand.UsuarioId,
                 HorarioAtencion = stand.HorarioAtencion,
-                
+                PosX = stand.PosX,
+                PosY = stand.PosY,
+                Width = stand.Width,
+                Height = stand.Height,
+
                 CategoriaIds = stand.StandCategoria?.Select(sc => sc.CategoriaId).ToList() ?? new List<int>()
             };
         }
@@ -102,6 +106,10 @@ namespace FerioBackend.Controllers
                 Contacto = dto.Contacto,
                 UsuarioId = dto.UsuarioId,
                 Usuario = usuario,
+                PosX = dto.PosX,
+                PosY = dto.PosY,
+                Width = dto.Width,
+                Height = dto.Height,
                 StandCategoria = dto.CategoriaIds.Select(id => new StandCategoria
                 {
                     CategoriaId = id
@@ -125,6 +133,10 @@ namespace FerioBackend.Controllers
                 EnlaceWeb = stand.EnlaceWeb,
                 Contacto = stand.Contacto,
                 UsuarioId = stand.UsuarioId,
+                PosX = stand.PosX,
+                PosY = stand.PosY,
+                Width = stand.Width,
+                Height = stand.Height,
                 CategoriaIds = stand.StandCategoria.Select(sc => sc.CategoriaId).ToList()
             };
 
@@ -196,8 +208,11 @@ namespace FerioBackend.Controllers
             existingStand.EnlaceWeb = stand.EnlaceWeb;
             existingStand.Contacto = stand.Contacto;
             existingStand.UsuarioId = stand.UsuarioId;
+            existingStand.PosX = stand.PosX;
+            existingStand.PosY = stand.PosY;
+            existingStand.Width = stand.Width;
+            existingStand.Height = stand.Height;
 
-            
             var categoriasAnteriores = _context.StandCategoria
                 .Where(sc => sc.StandId == existingStand.Id);
             _context.StandCategoria.RemoveRange(categoriasAnteriores);
