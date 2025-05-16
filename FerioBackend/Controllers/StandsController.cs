@@ -21,12 +21,35 @@ namespace FerioBackend.Controllers
             _context = context;
         }
 
-        // GET: Obtiene todos los stands 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Stand>>> GetStands()
+        [AllowAnonymous]
+        public async Task<ActionResult<IEnumerable<StandCreateDto>>> GetStands()
         {
-            return await _context.Stands.ToListAsync();
+            var stands = await _context.Stands
+                .Include(s => s.StandCategoria)
+                .ToListAsync();
+
+            var result = stands.Select(s => new StandCreateDto
+            {
+                Id = s.Id,
+                Nombre = s.Nombre,
+                Descripcion = s.Descripcion,
+                Logo = s.Logo,
+                Ubicacion = s.Ubicacion,
+                EnlaceWeb = s.EnlaceWeb,
+                Contacto = s.Contacto,
+                UsuarioId = s.UsuarioId,
+                HorarioAtencion = s.HorarioAtencion,
+                PosX = s.PosX,
+                PosY = s.PosY,
+                Width = s.Width,
+                Height = s.Height,
+                CategoriaIds = s.StandCategoria?.Select(sc => sc.CategoriaId).ToList() ?? new List<int>()
+            });
+
+            return Ok(result.ToList());
         }
+
 
         // GET: Obtiene un stand por ID (Accesible para organizadores o para el Expositor dueño de su propio stand)
         [HttpGet("{id}")]

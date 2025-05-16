@@ -60,7 +60,7 @@ namespace FerioBackend.Controllers
 
 
         
-        // PUT: api/usuarios/ (Actualiza un usuario existente, sólo ciertos campos)
+        // PUT: api/usuarios/5 (Actualiza un usuario existente, sólo ciertos campos)
         [HttpPut("{id}")]
         public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
         {
