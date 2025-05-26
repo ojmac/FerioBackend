@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="ferio.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3207"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Usuarios" custom_title="0" dock_id="1" table="4,8:mainUsuarios"/><dock_state state="000000ff00000000fd00000001000000020000054a0000024ffc0100000001fb000000160064006f0063006b00420072006f007700730065003101000000000000054a0000011e00ffffff0000054a0000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Categorias" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="239"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Mensajes" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="40"/><column index="3" value="65"/><column index="4" value="71"/><column index="5" value="38"/><column index="6" value="65"/><column index="7" value="55"/><column index="8" value="75"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="StandCategoria" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="55"/><column index="2" value="77"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Stands" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="123"/><column index="3" value="73"/><column index="4" value="69"/><column index="5" value="63"/><column index="6" value="118"/><column index="7" value="99"/><column index="8" value="99"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="UsuarioStandFavorito" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="65"/><column index="3" value="55"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Usuarios" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="52"/><column index="3" value="111"/><column index="4" value="300"/><column index="5" value="75"/><column index="6" value="143"/><column index="7" value="57"/><column index="8" value="63"/><column index="9" value="57"/><column index="10" value="223"/><column index="11" value="300"/><column index="12" value="159"/><column index="13" value="55"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">INSERT INTO Categorias (Nombre) VALUES ('Turismos');
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="ferio.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3207"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/><expanded_item id="4" parent="1"/><expanded_item id="5" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="Stands" custom_title="0" dock_id="1" table="4,6:mainStands"/><dock_state state="000000ff00000000fd00000001000000020000054a0000024ffc0100000001fb000000160064006f0063006b00420072006f007700730065003101000000000000054a0000012500ffffff0000054a0000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Categorias" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="239"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Mensajes" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="40"/><column index="3" value="65"/><column index="4" value="71"/><column index="5" value="38"/><column index="6" value="65"/><column index="7" value="55"/><column index="8" value="75"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="StandCategoria" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="55"/><column index="2" value="77"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Stands" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="123"/><column index="3" value="73"/><column index="4" value="69"/><column index="5" value="63"/><column index="6" value="118"/><column index="7" value="99"/><column index="8" value="99"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="UsuarioStandFavorito" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="65"/><column index="3" value="55"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="Usuarios" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="35"/><column index="2" value="52"/><column index="3" value="111"/><column index="4" value="300"/><column index="5" value="75"/><column index="6" value="143"/><column index="7" value="57"/><column index="8" value="63"/><column index="9" value="57"/><column index="10" value="223"/><column index="11" value="300"/><column index="12" value="159"/><column index="13" value="55"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">INSERT INTO Categorias (Nombre) VALUES ('Turismos');
 INSERT INTO Categorias(Nombre) VALUES ('Vehículos Comerciales');
 INSERT INTO Categorias (Nombre) VALUES ('Coches Eléctricos');
 INSERT INTO Categorias (Nombre) VALUES ('Accesorios y Piezas');
@@ -7,10 +7,10 @@ INSERT INTO Categorias (Nombre) VALUES ('Seguros');
 INSERT INTO Categorias (Nombre) VALUES ('Recambios y Repuestos');
 INSERT INTO Categorias (Nombre) VALUES ('Movilidad Sostenible');
 INSERT INTO Categorias (Nombre) VALUES ('Vehículos de Alto Rendimiento');
-INSERT INTO Categorias (Nombre) VALUES ('Equipamiento Profesional');
-INSERT INTO Categorias (Nombre) VALUES ('Baño');
-INSERT INTO Categorias (Nombre) VALUES ('Cafetería');
-INSERT INTO Categorias (Nombre) VALUES ('Punto de Información');
+INSERT INTO Categorias (Nombre) VALUES ('Equipamiento Profesional');
+INSERT INTO Categorias (Nombre) VALUES ('Baño');
+INSERT INTO Categorias (Nombre) VALUES ('Cafetería');
+INSERT INTO Categorias (Nombre) VALUES ('Punto de Información');
 
 </sql><sql name="SQL 2">INSERT INTO Stands (Nombre, Descripcion, Logo, Ubicacion, EnlaceWeb, Contacto, UsuarioId, HorarioAtencion)
 VALUES
@@ -35,167 +35,167 @@ VALUES
 ('Mini', 'Diversión compacta. Descubrí la personalidad única de Mini.', 'mini.jpg', '119', 'http://mini.es', 'Valeria', 2, '10:30 - 18:30'),
 ('Tesla', 'El futuro ya llegó. Probá la tecnología de conducción autónoma con Tesla.', 'tesla.jpg', '120', 'http://tesla.es', 'Álvaro', 2, '11:00 - 19:00'),
 ('Organizacion', 'Stand de infomación y gestión ferial', 'ferio7.jpg', '500', 'http://Ferio.es', 'M', 1, '9:00 - 21:00');
-</sql><sql name="SQL 3">-- Renault
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (1, 1), (1, 3), (1, 8);
-
--- Peugeot
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (2, 1), (2, 2), (2, 5);
-
--- Citroën
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (3, 1), (3, 3), (3, 7);
-
--- BMW
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (4, 1), (4, 9), (4, 5);
-
--- Audi
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (5, 1), (5, 3), (5, 9);
-
--- Mercedes-Benz
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (6, 1), (6, 5), (6, 9);
-
--- Tesla
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (7, 3), (7, 8), (7, 5);
-
--- Volkswagen
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (8, 1), (8, 3), (8, 2);
-
--- SEAT
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (9, 1), (9, 7), (9, 5);
-
--- Ford
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (10, 1), (10, 2), (10, 6);
-
--- Nissan
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (11, 1), (11, 3), (11, 8);
-
--- Hyundai
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (12, 1), (12, 3), (12, 5);
-
--- Kia
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (13, 1), (13, 2), (13, 4);
-
--- Toyota
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (14, 1), (14, 3), (14, 8);
-
--- Lexus
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (15, 1), (15, 3), (15, 9);
-
--- Volvo
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (16, 1), (16, 6), (16, 9);
-
--- Jeep
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (17, 1), (17, 9), (17, 5);
-
--- Fiat
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (18, 1), (18, 2), (18, 4);
-
--- Alfa Romeo
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (19, 1), (19, 9), (19, 7);
-
--- Maserati
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (20, 1), (20, 9), (20, 5);
-
--- ORGANIZACION
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (21, 12);
-
--- Baños 1
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (22, 10);
-
--- Baños 2
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (23, 10);
-
--- Cafetería 1
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (24, 11);
-
--- Cafetería 2
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (25, 11);
-
--- Información
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (26, 12);
+</sql><sql name="SQL 3">-- Renault
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (1, 1), (1, 3), (1, 8);
+
+-- Peugeot
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (2, 1), (2, 2), (2, 5);
+
+-- Citroën
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (3, 1), (3, 3), (3, 7);
+
+-- BMW
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (4, 1), (4, 9), (4, 5);
+
+-- Audi
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (5, 1), (5, 3), (5, 9);
+
+-- Mercedes-Benz
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (6, 1), (6, 5), (6, 9);
+
+-- Tesla
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (7, 3), (7, 8), (7, 5);
+
+-- Volkswagen
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (8, 1), (8, 3), (8, 2);
+
+-- SEAT
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (9, 1), (9, 7), (9, 5);
+
+-- Ford
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (10, 1), (10, 2), (10, 6);
+
+-- Nissan
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (11, 1), (11, 3), (11, 8);
+
+-- Hyundai
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (12, 1), (12, 3), (12, 5);
+
+-- Kia
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (13, 1), (13, 2), (13, 4);
+
+-- Toyota
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (14, 1), (14, 3), (14, 8);
+
+-- Lexus
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (15, 1), (15, 3), (15, 9);
+
+-- Volvo
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (16, 1), (16, 6), (16, 9);
+
+-- Jeep
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (17, 1), (17, 9), (17, 5);
+
+-- Fiat
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (18, 1), (18, 2), (18, 4);
+
+-- Alfa Romeo
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (19, 1), (19, 9), (19, 7);
+
+-- Maserati
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (20, 1), (20, 9), (20, 5);
+
+-- ORGANIZACION
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (21, 12);
+
+-- Baños 1
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (22, 10);
+
+-- Baños 2
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (23, 10);
+
+-- Cafetería 1
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (24, 11);
+
+-- Cafetería 2
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (25, 11);
+
+-- Información
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (26, 12);
 </sql><sql name="SQL 5">UPDATE Stands
 SET UsuarioId = 3
 WHERE Id = 5;
-</sql><sql name="SQL 5">
-DELETE FROM Categorias WHERE Id IN (24, 25, 26);
-</sql><sql name="SQL 6">INSERT INTO Stands (Nombre, Descripcion, Logo, Ubicacion, EnlaceWeb, Contacto, UsuarioId, HorarioAtencion, PosX, PosY, Width, Height)
-VALUES
-('Renault', 'Descubre lo último en tecnología automotriz con Renault. Innovación y eficiencia al alcance de todos.', 'renault.jpg', '101', 'http://renault.es', 'Pepe', 2, '10:00 - 18:00', 1, 1, 2, 2),
-('Peugeot', 'Peugeot presenta sus modelos más emblemáticos y sostenibles. Vení a conocer el futuro eléctrico.', 'peugeot.jpg', '102', 'http://peugeot.es', 'Juan', 2, '11:00 - 19:00', 3, 1, 2, 2),
-('BMW', 'La elegancia alemana en su máxima expresión. BMW te invita a vivir la experiencia premium.', 'bmw.jpg', '103', 'http://bmw.es', 'Lucía', 2, '09:30 - 17:30', 5, 1, 2, 2),
-('Audi', 'Diseño, potencia y tecnología: todo en un solo lugar. No te pierdas la gama de Audi.', 'audi.jpg', '104', 'http://audi.es', 'Marcos', 2, '10:00 - 19:00', 7, 1, 2, 2),
-('Mercedes-Benz', 'El lujo sobre ruedas. Conocé los últimos lanzamientos de Mercedes.', 'mercedes.jpg', '105', 'http://mercedes.es', 'Sofía', 2, '11:00 - 19:30', 9, 1, 2, 2),
-('Toyota', 'Movilidad para todos. Vení a ver cómo Toyota apuesta por la sostenibilidad y la innovación.', 'toyota.jpg', '106', 'http://toyota.es', 'Javier', 2, '10:00 - 17:00', 1, 3, 2, 2),
-('Kia', 'Modernidad, confort y eficiencia. Kia te espera con su línea de vehículos inteligentes.', 'kia.jpg', '107', 'http://kia.es', 'Ana', 2, '10:30 - 18:30', 3, 3, 2, 2),
-('Hyundai', 'Tecnología coreana con estilo. Explorá las novedades de Hyundai en nuestro stand.', 'hyundai.jpg', '108', 'http://hyundai.es', 'Tomás', 2, '09:00 - 15:00', 5, 3, 2, 2),
-('Volkswagen', 'Confiabilidad y evolución. Mirá de cerca el ADN de VW.', 'volkswagen.jpg', '109', 'http://volkswagen.es', 'Carla', 2, '10:00 - 17:30', 7, 3, 2, 2),
-('Seat', 'Diseño español con espíritu joven. Conocé los nuevos modelos de Seat.', 'seat.jpg', '110', 'http://seat.es', 'Martín', 2, '11:00 - 19:00', 9, 3, 2, 2),
-('Skoda', 'Innovación accesible. Skoda muestra sus modelos con mejor relación calidad-precio.', 'skoda.jpg', '111', 'http://skoda.es', 'Julia', 2, '09:30 - 17:30', 1, 5, 2, 2),
-('Nissan', 'Energía inteligente. Vení a descubrir los avances eléctricos de Nissan.', 'nissan.jpg', '112', 'http://nissan.es', 'Andrés', 2, '10:00 - 18:00', 3, 5, 2, 2),
-('Mazda', 'Estilo y conducción deportiva. Mazda te invita a redescubrir la conducción.', 'mazda.jpg', '113', 'http://mazda.es', 'Florencia', 2, '11:00 - 19:00', 5, 5, 2, 2),
-('Citroën', 'Confort innovador. Citroën presenta su línea con el enfoque más cómodo del mercado.', 'citroen.jpg', '114', 'http://citroen.es', 'Leo', 2, '10:00 - 17:00', 7, 5, 2, 2),
-('Fiat', 'Tradición italiana con mirada joven. Fiat te sorprende con sus nuevos modelos urbanos.', 'fiat.jpg', '115', 'http://fiat.es', 'Isabel', 2, '10:30 - 18:30', 9, 5, 2, 2),
-('Jeep', 'Aventura sin límites. Jeep te espera con sus SUVs más resistentes.', 'jeep.jpg', '116', 'http://jeep.es', 'Manuel', 2, '11:00 - 19:00', 1, 7, 2, 2),
-('Ford', 'Potencia e innovación. Explorá el futuro del motor con Ford.', 'ford.jpg', '117', 'http://ford.es', 'Laura', 2, '09:00 - 17:00', 3, 7, 2, 2),
-('Volvo', 'Seguridad y diseño escandinavo. Volvo trae su última tecnología en seguridad.', 'volvo.jpg', '118', 'http://volvo.es', 'Nico', 2, '10:00 - 18:00', 5, 7, 2, 2),
-('Mini', 'Diversión compacta. Descubrí la personalidad única de Mini.', 'mini.jpg', '119', 'http://mini.es', 'Valeria', 2, '10:30 - 18:30', 7, 7, 2, 2),
-('Tesla', 'El futuro ya llegó. Probá la tecnología de conducción autónoma con Tesla.', 'tesla.jpg', '120', 'http://tesla.es', 'Álvaro', 2, '11:00 - 19:00', 9, 7, 2, 2),
-('Organizacion', 'Stand de infomación y gestión ferial', 'ferio7.jpg', '500', 'http://Ferio.es', 'M', 1, '9:00 - 21:00', 0, 0, 2, 2),
-('Baños 1', 'Servicios sanitarios - Zona A', 'banos.jpg', '998A', '', '', 1, '9:00 - 21:00', 11, 1, 2, 2),
-('Baños 2', 'Servicios sanitarios - Zona B', 'banos.jpg', '998B', '', '', 1, '9:00 - 21:00', 11, 7, 2, 2),
-('Cafetería 1', 'Zona de descanso y café - Norte', 'cafe.jpg', '997A', '', '', 1, '9:00 - 21:00', 0, 3, 2, 2),
-('Cafetería 2', 'Zona de descanso y café - Sur', 'cafe.jpg', '997B', '', '', 1, '9:00 - 21:00', 0, 5, 2, 2),
-('Información', 'Punto de ayuda e información general', 'info.jpg', '996', '', '', 1, '9:00 - 21:00', 5, 9, 2, 2);
-</sql><sql name="SQL 7">DELETE FROM Stands;
-DELETE FROM sqlite_sequence WHERE name = 'Stands';
-</sql><sql name="SQL 8">-- Primeros 20 stands colocados en filas de 5
-UPDATE Stands SET Height = 2, Width = 2, PosX = 1, PosY = 1 WHERE Id = 1;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 4, PosY = 1 WHERE Id = 2;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 7, PosY = 1 WHERE Id = 3;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 10, PosY = 1 WHERE Id = 4;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 13, PosY = 1 WHERE Id = 5;
-
-UPDATE Stands SET Height = 2, Width = 2, PosX = 1, PosY = 4 WHERE Id = 6;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 4, PosY = 4 WHERE Id = 7;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 7, PosY = 4 WHERE Id = 8;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 10, PosY = 4 WHERE Id = 9;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 13, PosY = 4 WHERE Id = 10;
-
-UPDATE Stands SET Height = 2, Width = 2, PosX = 1, PosY = 7 WHERE Id = 11;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 4, PosY = 7 WHERE Id = 12;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 7, PosY = 7 WHERE Id = 13;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 10, PosY = 7 WHERE Id = 14;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 13, PosY = 7 WHERE Id = 15;
-
-UPDATE Stands SET Height = 2, Width = 2, PosX = 1, PosY = 10 WHERE Id = 16;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 4, PosY = 10 WHERE Id = 17;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 7, PosY = 10 WHERE Id = 18;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 10, PosY = 10 WHERE Id = 19;
-UPDATE Stands SET UsuarioId = 2 WHERE Id = 21;
-
--- Los 6 restantes los dejamos de momento en 0,0
-UPDATE Stands SET Height = 2, Width = 2, PosX = 0, PosY = 0 WHERE Id = 21;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 0, PosY = 0 WHERE Id = 22;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 0, PosY = 0 WHERE Id = 23;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 0, PosY = 0 WHERE Id = 24;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 0, PosY = 0 WHERE Id = 25;
-UPDATE Stands SET Height = 2, Width = 2, PosX = 0, PosY = 0 WHERE Id = 26;
-
-
-</sql><sql name="SQL 11">UPDATE Stands SET Height = 2, Width = 2, PosX = -2, PosY = 7 WHERE Id = 21;</sql><sql name="SQL 12">-- ORGANIZACION
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (21, 28);
-
--- Baños 1
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (22, 21);
-
--- Baños 2
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (23, 21);
-
--- Cafetería 1
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (24, 27);
-
--- Cafetería 2
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (25, 27);
-
--- Información
-INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (26, 23);
+</sql><sql name="SQL 5">
+DELETE FROM Categorias WHERE Id IN (24, 25, 26);
+</sql><sql name="SQL 6">INSERT INTO Stands (Nombre, Descripcion, Logo, Ubicacion, EnlaceWeb, Contacto, UsuarioId, HorarioAtencion, PosX, PosY, Width, Height)
+VALUES
+('Renault', 'Descubre lo último en tecnología automotriz con Renault. Innovación y eficiencia al alcance de todos.', 'renault.jpg', '101', 'http://renault.es', 'Pepe', 2, '10:00 - 18:00', 1, 1, 2, 2),
+('Peugeot', 'Peugeot presenta sus modelos más emblemáticos y sostenibles. Vení a conocer el futuro eléctrico.', 'peugeot.jpg', '102', 'http://peugeot.es', 'Juan', 2, '11:00 - 19:00', 3, 1, 2, 2),
+('BMW', 'La elegancia alemana en su máxima expresión. BMW te invita a vivir la experiencia premium.', 'bmw.jpg', '103', 'http://bmw.es', 'Lucía', 2, '09:30 - 17:30', 5, 1, 2, 2),
+('Audi', 'Diseño, potencia y tecnología: todo en un solo lugar. No te pierdas la gama de Audi.', 'audi.jpg', '104', 'http://audi.es', 'Marcos', 2, '10:00 - 19:00', 7, 1, 2, 2),
+('Mercedes-Benz', 'El lujo sobre ruedas. Conocé los últimos lanzamientos de Mercedes.', 'mercedes.jpg', '105', 'http://mercedes.es', 'Sofía', 2, '11:00 - 19:30', 9, 1, 2, 2),
+('Toyota', 'Movilidad para todos. Vení a ver cómo Toyota apuesta por la sostenibilidad y la innovación.', 'toyota.jpg', '106', 'http://toyota.es', 'Javier', 2, '10:00 - 17:00', 1, 3, 2, 2),
+('Kia', 'Modernidad, confort y eficiencia. Kia te espera con su línea de vehículos inteligentes.', 'kia.jpg', '107', 'http://kia.es', 'Ana', 2, '10:30 - 18:30', 3, 3, 2, 2),
+('Hyundai', 'Tecnología coreana con estilo. Explorá las novedades de Hyundai en nuestro stand.', 'hyundai.jpg', '108', 'http://hyundai.es', 'Tomás', 2, '09:00 - 15:00', 5, 3, 2, 2),
+('Volkswagen', 'Confiabilidad y evolución. Mirá de cerca el ADN de VW.', 'volkswagen.jpg', '109', 'http://volkswagen.es', 'Carla', 2, '10:00 - 17:30', 7, 3, 2, 2),
+('Seat', 'Diseño español con espíritu joven. Conocé los nuevos modelos de Seat.', 'seat.jpg', '110', 'http://seat.es', 'Martín', 2, '11:00 - 19:00', 9, 3, 2, 2),
+('Skoda', 'Innovación accesible. Skoda muestra sus modelos con mejor relación calidad-precio.', 'skoda.jpg', '111', 'http://skoda.es', 'Julia', 2, '09:30 - 17:30', 1, 5, 2, 2),
+('Nissan', 'Energía inteligente. Vení a descubrir los avances eléctricos de Nissan.', 'nissan.jpg', '112', 'http://nissan.es', 'Andrés', 2, '10:00 - 18:00', 3, 5, 2, 2),
+('Mazda', 'Estilo y conducción deportiva. Mazda te invita a redescubrir la conducción.', 'mazda.jpg', '113', 'http://mazda.es', 'Florencia', 2, '11:00 - 19:00', 5, 5, 2, 2),
+('Citroën', 'Confort innovador. Citroën presenta su línea con el enfoque más cómodo del mercado.', 'citroen.jpg', '114', 'http://citroen.es', 'Leo', 2, '10:00 - 17:00', 7, 5, 2, 2),
+('Fiat', 'Tradición italiana con mirada joven. Fiat te sorprende con sus nuevos modelos urbanos.', 'fiat.jpg', '115', 'http://fiat.es', 'Isabel', 2, '10:30 - 18:30', 9, 5, 2, 2),
+('Jeep', 'Aventura sin límites. Jeep te espera con sus SUVs más resistentes.', 'jeep.jpg', '116', 'http://jeep.es', 'Manuel', 2, '11:00 - 19:00', 1, 7, 2, 2),
+('Ford', 'Potencia e innovación. Explorá el futuro del motor con Ford.', 'ford.jpg', '117', 'http://ford.es', 'Laura', 2, '09:00 - 17:00', 3, 7, 2, 2),
+('Volvo', 'Seguridad y diseño escandinavo. Volvo trae su última tecnología en seguridad.', 'volvo.jpg', '118', 'http://volvo.es', 'Nico', 2, '10:00 - 18:00', 5, 7, 2, 2),
+('Mini', 'Diversión compacta. Descubrí la personalidad única de Mini.', 'mini.jpg', '119', 'http://mini.es', 'Valeria', 2, '10:30 - 18:30', 7, 7, 2, 2),
+('Tesla', 'El futuro ya llegó. Probá la tecnología de conducción autónoma con Tesla.', 'tesla.jpg', '120', 'http://tesla.es', 'Álvaro', 2, '11:00 - 19:00', 9, 7, 2, 2),
+('Organizacion', 'Stand de infomación y gestión ferial', 'ferio7.jpg', '500', 'http://Ferio.es', 'M', 1, '9:00 - 21:00', 0, 0, 2, 2),
+('Baños 1', 'Servicios sanitarios - Zona A', 'banos.jpg', '998A', '', '', 1, '9:00 - 21:00', 11, 1, 2, 2),
+('Baños 2', 'Servicios sanitarios - Zona B', 'banos.jpg', '998B', '', '', 1, '9:00 - 21:00', 11, 7, 2, 2),
+('Cafetería 1', 'Zona de descanso y café - Norte', 'cafe.jpg', '997A', '', '', 1, '9:00 - 21:00', 0, 3, 2, 2),
+('Cafetería 2', 'Zona de descanso y café - Sur', 'cafe.jpg', '997B', '', '', 1, '9:00 - 21:00', 0, 5, 2, 2),
+('Información', 'Punto de ayuda e información general', 'info.jpg', '996', '', '', 1, '9:00 - 21:00', 5, 9, 2, 2);
+</sql><sql name="SQL 7">DELETE FROM Stands;
+DELETE FROM sqlite_sequence WHERE name = 'Stands';
+</sql><sql name="SQL 8">-- Primeros 20 stands colocados en filas de 5
+UPDATE Stands SET Height = 2, Width = 2, PosX = 1, PosY = 1 WHERE Id = 1;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 4, PosY = 1 WHERE Id = 2;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 7, PosY = 1 WHERE Id = 3;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 10, PosY = 1 WHERE Id = 4;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 13, PosY = 1 WHERE Id = 5;
+
+UPDATE Stands SET Height = 2, Width = 2, PosX = 1, PosY = 4 WHERE Id = 6;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 4, PosY = 4 WHERE Id = 7;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 7, PosY = 4 WHERE Id = 8;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 10, PosY = 4 WHERE Id = 9;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 13, PosY = 4 WHERE Id = 10;
+
+UPDATE Stands SET Height = 2, Width = 2, PosX = 1, PosY = 7 WHERE Id = 11;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 4, PosY = 7 WHERE Id = 12;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 7, PosY = 7 WHERE Id = 13;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 10, PosY = 7 WHERE Id = 14;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 13, PosY = 7 WHERE Id = 15;
+
+UPDATE Stands SET Height = 2, Width = 2, PosX = 1, PosY = 10 WHERE Id = 16;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 4, PosY = 10 WHERE Id = 17;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 7, PosY = 10 WHERE Id = 18;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 10, PosY = 10 WHERE Id = 19;
+UPDATE Stands SET UsuarioId = 2 WHERE Id = 21;
+
+-- Los 6 restantes los dejamos de momento en 0,0
+UPDATE Stands SET Height = 2, Width = 2, PosX = 0, PosY = 0 WHERE Id = 21;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 0, PosY = 0 WHERE Id = 22;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 0, PosY = 0 WHERE Id = 23;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 0, PosY = 0 WHERE Id = 24;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 0, PosY = 0 WHERE Id = 25;
+UPDATE Stands SET Height = 2, Width = 2, PosX = 0, PosY = 0 WHERE Id = 26;
+
+
+</sql><sql name="SQL 11">UPDATE Stands SET Height = 2, Width = 2, PosX = -2, PosY = 7 WHERE Id = 21;</sql><sql name="SQL 12">-- ORGANIZACION
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (21, 28);
+
+-- Baños 1
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (22, 21);
+
+-- Baños 2
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (23, 21);
+
+-- Cafetería 1
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (24, 27);
+
+-- Cafetería 2
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (25, 27);
+
+-- Información
+INSERT INTO StandCategoria (StandId, CategoriaId) VALUES (26, 23);
 </sql><sql name="SQL 13">UPDATE Stands SET UsuarioId = 1 WHERE Id = 21;</sql><current_tab id="10"/></tab_sql></sqlb_project>
