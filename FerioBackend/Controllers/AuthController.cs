@@ -8,6 +8,7 @@ using FerioBackend.Models;
 using Microsoft.EntityFrameworkCore;
 using FerioBackend.Services;
 using Microsoft.AspNetCore.Authorization;
+using System.Diagnostics;
 //using FerioBackend.Interfaces; // doble autenticacion con email, no implementado
 
 
@@ -27,24 +28,25 @@ namespace FerioBackend.Controllers
             _configuration = configuration;
             //_emailService = emailService ?? throw new ArgumentNullException(nameof(emailService)); // Verifica si es null
         }
-
-        // POST api/auth/login
         [HttpPost("login")]
-        [HttpPost("updateprofile")]
         public async Task<IActionResult> Login([FromBody] Login login)
         {
-            // Buscar al usuario por su correo
-            var user = await _context.Usuarios
-                .FirstOrDefaultAsync(u => u.Email == login.Email);
+            Debug.WriteLine("Inicio del método Login");
 
-            if (user == null || !AuthService.VerifyPasswordHash(login.Password, user.Contrasena))  // Usar el servicio para verificar
+            // Buscar al usuario por su correo
+            var user = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == login.Email);
+            Debug.WriteLine(user == null ? "Usuario no encontrado" : $"Usuario encontrado: {user.Email}");
+
+            if (user == null || !AuthService.VerifyPasswordHash(login.Password, user.Contrasena))
             {
+                Debug.WriteLine("Contraseña incorrecta o usuario no encontrado");
                 return Unauthorized("Correo o contraseña incorrectos.");
             }
 
             var secretKey = _configuration["Jwt:SecretKey"];
             if (string.IsNullOrEmpty(secretKey))
             {
+                Debug.WriteLine("Clave secreta JWT no configurada");
                 return BadRequest("La clave secreta del JWT no está configurada.");
             }
 
@@ -52,45 +54,126 @@ namespace FerioBackend.Controllers
 
             // Generar el JWT
             var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, user.Nombre),
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim("UserId", user.Id.ToString()),
-                new Claim(ClaimTypes.Role, user.TipoUsuario.ToString()) // Aquí agregamos el rol
-            };
+    {
+        new Claim(ClaimTypes.Name, user.Nombre),
+        new Claim(ClaimTypes.Email, user.Email),
+        new Claim("UserId", user.Id.ToString()),
+        new Claim(ClaimTypes.Role, user.TipoUsuario.ToString())
+    };
 
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
             var token = new JwtSecurityToken(
-               
                 issuer: _configuration["Jwt:Issuer"],
                 audience: _configuration["Jwt:Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddHours(8), // Expira en 8 horas
+                expires: DateTime.Now.AddHours(8),
                 signingCredentials: creds
             );
 
-            // Guarda el token en el usuario
-            user.Token = new JwtSecurityTokenHandler().WriteToken(token);
-            user.TokenExpiration = token.ValidTo; // Guardar la fecha de expiración del token
-            _context.Usuarios.Update(user);
-            await _context.SaveChangesAsync();
+            var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
+            Debug.WriteLine($"Token generado: {tokenString}");
 
-            // Devuelve el token JWT y su fecha de expiración
+            user.Token = tokenString;
+            user.TokenExpiration = token.ValidTo;
+
+            try
+            {
+                _context.Usuarios.Update(user);
+                await _context.SaveChangesAsync();
+                Debug.WriteLine("Token y expiración guardados en la base de datos");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error al guardar token en BD: {ex.Message}");
+                return StatusCode(500, "Error interno al guardar el token.");
+            }
+
             var response = new
             {
-                token = new JwtSecurityTokenHandler().WriteToken(token),
+                token = tokenString,
                 expiration = token.ValidTo
             };
 
-            // Actualiza la fecha del último login del usuario 
+            // Actualiza la fecha del último login
             user.LastLoginDate = DateTime.Now;
-            _context.Usuarios.Update(user);
-            await _context.SaveChangesAsync();
 
-            // Devuelve el token en la respuesta
+            try
+            {
+                _context.Usuarios.Update(user);
+                await _context.SaveChangesAsync();
+                Debug.WriteLine($"Última fecha de login actualizada: {user.LastLoginDate}");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error al actualizar LastLoginDate: {ex.Message}");
+            }
+
+            Debug.WriteLine("Login completado correctamente");
             return Ok(response);
         }
+
+        //// POST api/auth/login
+        //[HttpPost("login")]
+        //public async Task<IActionResult> Login([FromBody] Login login)
+        //{
+        //    // Buscar al usuario por su correo
+        //    var user = await _context.Usuarios
+        //        .FirstOrDefaultAsync(u => u.Email == login.Email);
+
+        //    if (user == null || !AuthService.VerifyPasswordHash(login.Password, user.Contrasena))  // Usar el servicio para verificar
+        //    {
+        //        return Unauthorized("Correo o contraseña incorrectos.");
+        //    }
+
+        //    var secretKey = _configuration["Jwt:SecretKey"];
+        //    if (string.IsNullOrEmpty(secretKey))
+        //    {
+        //        return BadRequest("La clave secreta del JWT no está configurada.");
+        //    }
+
+        //    var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
+
+        //    // Generar el JWT
+        //    var claims = new List<Claim>
+        //    {
+        //        new Claim(ClaimTypes.Name, user.Nombre),
+        //        new Claim(ClaimTypes.Email, user.Email),
+        //        new Claim("UserId", user.Id.ToString()),
+        //        new Claim(ClaimTypes.Role, user.TipoUsuario.ToString())
+        //    };
+
+        //    var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+        //    var token = new JwtSecurityToken(
+
+        //        issuer: _configuration["Jwt:Issuer"],
+        //        audience: _configuration["Jwt:Audience"],
+        //        claims: claims,
+        //        expires: DateTime.Now.AddHours(8), // Expira en 8 horas
+        //        signingCredentials: creds
+        //    );
+
+        //    // Guarda el token en el usuario
+        //    user.Token = new JwtSecurityTokenHandler().WriteToken(token);
+        //    user.TokenExpiration = token.ValidTo; // Guardar la fecha de expiración del token
+        //    _context.Usuarios.Update(user);
+        //    await _context.SaveChangesAsync();
+
+        //    // Devuelve el token JWT y su fecha de expiración
+        //    var response = new
+        //    {
+        //        token = new JwtSecurityTokenHandler().WriteToken(token),
+        //        expiration = token.ValidTo
+        //    };
+
+        //    // Actualiza la fecha del último login del usuario 
+        //    user.LastLoginDate = DateTime.Now;
+        //    _context.Usuarios.Update(user);
+        //    await _context.SaveChangesAsync();
+
+        //    // Devuelve el token en la respuesta
+        //    return Ok(response);
+        //}
 
         //[HttpPost("register")]
         //public async Task<IActionResult> Register([FromBody] Register register)

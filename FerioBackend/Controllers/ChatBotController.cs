@@ -73,7 +73,7 @@ namespace FerioBackend.Controllers
 
             // MENSAJES
             sb.AppendLine("\nMensajes enviados:");
-            foreach (var m in mensajes.Take(10)) // solo los últimos 10 por claridad
+            foreach (var m in mensajes.Take(10)) 
             {
                 sb.AppendLine($"- [{m.FechaEnvio}] {m.Titulo}: {m.Contenido} (Usuario ID: {m.UsuarioId}, Stand: {(m.Stand?.Nombre ?? "N/A")})");
             }

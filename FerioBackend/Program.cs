@@ -28,11 +28,11 @@ builder.Services.AddCors(options =>
 builder.Services.AddDbContext<FerioDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Configura autenticación JWT
+// Configura autenticaciÃ³n JWT
 var secretKey = builder.Configuration["Jwt:SecretKey"];
 if (string.IsNullOrEmpty(secretKey) || secretKey.Length < 32)
 {
-    throw new Exception("La clave secreta JWT es demasiado corta. Asegúrate de que tenga al menos 256 bits.");
+    throw new Exception("La clave secreta JWT es demasiado corta. AsegÃºrate de que tenga al menos 256 bits.");
 }
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -64,7 +64,7 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "FerioBackend API", Version = "v1" });
 
-    // Configuración para autenticación JWT en Swagger
+    // ConfiguraciÃ³n para autenticaciÃ³n JWT en Swagger
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description = "Ingrese el token JWT en el formato: Bearer {token}",
